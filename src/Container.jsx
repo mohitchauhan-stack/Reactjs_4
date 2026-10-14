@@ -4,15 +4,19 @@ import Navbar from "./components/Navbar";
 import About from "./Pages/About";
 import ContactUs from "./Pages/ContactUs";
 import Home from "./Pages/Home";
+import Projects from "./Pages/Projects";
+import Skills from "./Pages/Skills";
 
 const Container = () => {
   return (
-    <div className="max-w-2xl h-screen mx-auto">
+    <div className="max-w-2xl h-150 mx-auto">
       <Navbar />
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
 

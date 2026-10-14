@@ -1,23 +1,25 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div className="text-black h-25 bg-neutral-100 w-full flex items-start flex-col justify-center gap-2 px-5">
       <h1 className="text-3xl font-bold">Mohit Chauhan</h1>
       <div className="nav_links flex gap-5 text-neutral-500 text-lg">
-        <a className="hover:text-neutral-600" href="/">
+        <Link className="hover:text-neutral-600" to="/">
           Home
-        </a>
-        <a className="hover:text-neutral-600" href="/about">
+        </Link>
+        <Link className="hover:text-neutral-600" to="/about">
           About
-        </a>
-        <a className="hover:text-neutral-600" href="/skills">
+        </Link>
+        <Link className="hover:text-neutral-600" to="/skills">
           Skills
-        </a>
-        <a className="hover:text-neutral-600" href="/projects">
+        </Link>
+        <Link className="hover:text-neutral-600" to="/projects">
           Projects
-        </a>
-        <a className="hover:text-neutral-600" href="/contact">
+        </Link>
+        <Link className="hover:text-neutral-600" to="/contact">
           Contact
-        </a>
+        </Link>
       </div>
     </div>
   );
