@@ -4,9 +4,11 @@ import Navbar from "./components/Navbar";
 import About from "./Pages/About";
 import ContactUs from "./Pages/ContactUs";
 import Home from "./Pages/Home";
+import Links from "./Pages/Links";
 import NotFound from "./Pages/NotFound";
 import Projects from "./Pages/Projects";
 import Skills from "./Pages/Skills";
+import Winks from "./Pages/Winks";
 
 const Container = () => {
   return (
@@ -15,7 +17,10 @@ const Container = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<About />}>
+          <Route path="links" element={<Links />} />
+          <Route path="winks" element={<Winks />} />
+        </Route>
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<ContactUs />} />
