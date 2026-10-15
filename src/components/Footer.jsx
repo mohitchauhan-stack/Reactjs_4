@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="px-5">
+    <div className="px-5 absolute bottom-0 w-full">
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-1">
           <p className="text-neutral-500 text-xs">SAY HELLO</p>
@@ -20,7 +20,6 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      
     </div>
   );
 };
