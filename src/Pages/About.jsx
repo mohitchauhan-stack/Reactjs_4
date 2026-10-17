@@ -7,6 +7,7 @@ const About = () => {
         <Link to="/about/links">Links</Link>
         <Link to="/about/winks">Winks</Link>
       </div>
+
       <Outlet />
     </div>
   );

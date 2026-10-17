@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Navigation from "./components/Navigation";
 import About from "./Pages/About";
 import ContactUs from "./Pages/ContactUs";
 import Home from "./Pages/Home";
@@ -14,6 +15,7 @@ const Container = () => {
   return (
     <div className="max-w-2xl h-screen mx-auto relative">
       <Navbar />
+      <Navigation />
 
       <Routes>
         <Route path="/" element={<Home />} />
